@@ -1,0 +1,38 @@
+:root {
+  --primary-orange: #FF4500;
+  --dark-orange: #CC3500;
+  --light-orange: #FF6A33;
+  --charcoal: #2C2C2C;
+  --dark-gray: #1A1A1A;
+  --light-gray: #F5F5F5;
+  --white: #FFFFFF;
+  --accent-blue: #1E3A8A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--charcoal);
+  overflow-x: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  text-align: left;
+}

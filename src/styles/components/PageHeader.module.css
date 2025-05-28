@@ -1,0 +1,68 @@
+.pageHeader {
+  height: 60vh;
+  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--charcoal) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.pageHeader.withImage {
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.pageHeader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 26, 26, 0.7);
+  z-index: 1;
+}
+
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.headerContainer h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.headerContainer p {
+  font-size: 1.3rem;
+  color: #CCCCCC;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: var(--primary-orange);
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    height: 50vh;
+  }
+  
+  .headerContainer h1 {
+    font-size: 2.2rem;
+  }
+  
+  .headerContainer p {
+    font-size: 1.1rem;
+  }
+}

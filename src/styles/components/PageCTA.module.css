@@ -1,0 +1,40 @@
+.pageCTA {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark-gray) 100%);
+  text-align: center;
+}
+
+.ctaContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.ctaContainer h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.ctaContainer p {
+  font-size: 1.2rem;
+  color: #CCCCCC;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
