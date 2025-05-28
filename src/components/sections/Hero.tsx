@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Button from '../ui/Button';
+import { HeroSplashCursor } from '../ui/HeroSplashCursor';
 import styles from '../../styles/components/Hero.module.css';
 
 const Hero: React.FC = () => {
@@ -26,6 +27,15 @@ const Hero: React.FC = () => {
 
   return (
     <section className={styles.hero}>
+      {/* Fluid Effect - Constrained to Hero Section */}
+      <HeroSplashCursor 
+        DENSITY_DISSIPATION={2.8}
+        VELOCITY_DISSIPATION={1.8}
+        SPLAT_FORCE={4000}
+        SPLAT_RADIUS={0.15}
+        COLOR_UPDATE_SPEED={8}
+      />
+      
       <div className={styles.rippleBackground}></div>
       <div className={styles.heroContainer}>
         <div className={styles.heroContent}>

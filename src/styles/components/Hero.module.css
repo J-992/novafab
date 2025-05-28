@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  /* Ensure the hero creates a stacking context for the fluid effect */
+  isolation: isolate;
 }
 
 .rippleBackground {
@@ -17,6 +19,7 @@
               rgba(255, 69, 0, 0.1) 0%, 
               transparent 50%);
   animation: rippleMove 8s ease-in-out infinite;
+  z-index: 2;
 }
 
 @keyframes rippleMove {
@@ -35,7 +38,14 @@
   gap: 4rem;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  /* Ensure content is above fluid effect */
+  pointer-events: none;
+}
+
+.heroContent {
+  /* Re-enable pointer events for interactive content */
+  pointer-events: auto;
 }
 
 .heroContent h1 {
@@ -44,10 +54,14 @@
   color: var(--white);
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  /* Add subtle text shadow for better readability over fluid */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .highlight {
   color: var(--primary-orange);
+  /* Enhance the highlight with a subtle glow */
+  text-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
 }
 
 .heroContent p {
@@ -55,6 +69,8 @@
   color: #CCCCCC;
   margin-bottom: 2rem;
   max-width: 500px;
+  /* Add text shadow for better readability */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .vectorArt {
@@ -63,6 +79,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Re-enable pointer events for visual elements */
+  pointer-events: auto;
 }
 
 .shape {
@@ -70,6 +88,8 @@
   background: linear-gradient(45deg, var(--primary-orange), var(--light-orange));
   border-radius: 8px;
   box-shadow: 0 20px 40px rgba(255, 69, 0, 0.3);
+  /* Add subtle backdrop blur for depth */
+  backdrop-filter: blur(1px);
 }
 
 .cube1 {
@@ -124,6 +144,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 4;
 }
 
 .particle {
@@ -133,6 +154,8 @@
   background: var(--primary-orange);
   border-radius: 50%;
   animation: particleFloat 6s linear infinite;
+  /* Add subtle glow to particles */
+  box-shadow: 0 0 6px rgba(255, 69, 0, 0.6);
 }
 
 @keyframes particleFloat {
@@ -146,9 +169,14 @@
   .heroContainer {
     grid-template-columns: 1fr;
     text-align: center;
+    pointer-events: auto;
   }
 
   .heroContent h1 {
     font-size: 2.5rem;
+  }
+  
+  .vectorArt {
+    height: 300px;
   }
 }
