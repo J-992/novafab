@@ -1,38 +1,17 @@
-:root {
-  --primary-orange: #FF4500;
-  --dark-orange: #CC3500;
-  --light-orange: #FF6A33;
-  --charcoal: #2C2C2C;
-  --dark-gray: #1A1A1A;
-  --light-gray: #F5F5F5;
-  --white: #FFFFFF;
-  --accent-blue: #1E3A8A;
-}
+/* Import Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import './styles/globals/variables.css';
+@import './styles/globals/base.css';
+@import './styles/globals/layout.css';
+@import './styles/globals/components.css';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--charcoal);
-  overflow-x: hidden;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
+/* App-specific styles */
 .App {
-  text-align: left;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }

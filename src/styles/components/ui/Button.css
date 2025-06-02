@@ -1,0 +1,30 @@
+/* Additional button styles specific to component usage */
+.button-group {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  align-items: center;
+}
+
+.button-icon {
+  margin-left: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+/* Button hover animations */
+.btn:hover .button-icon {
+  transform: translateX(2px);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .button-group .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

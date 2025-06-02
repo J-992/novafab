@@ -1,43 +1,15 @@
 export interface NavItem {
   label: string;
   href: string;
-  dropdown?: NavItem[];
-}
-
-export interface ValueCardProps {
-  icon: string;
-  title: string;
-  description: string;
 }
 
 export interface ButtonProps {
-  variant: 'primary' | 'secondary';
+  variant: 'primary' | 'secondary' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   href?: string;
   onClick?: () => void;
   className?: string;
-}
-
-export interface CompanyValue {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-// Add these interfaces to the existing file:
-
-export interface PageHeaderProps {
-  title: string;
-  subtitle: string;
-  backgroundImage?: string;
-}
-
-export interface ContentSectionProps {
-  title: string;
-  content: string;
-  imageUrl?: string;
-  imagePosition?: 'left' | 'right';
-  backgroundColor?: 'white' | 'gray';
 }
 
 export interface FeatureItem {
@@ -46,21 +18,7 @@ export interface FeatureItem {
   description: string;
 }
 
-export interface FeatureGridProps {
-  title: string;
-  features: FeatureItem[];
-  columns?: 2 | 3 | 4;
-}
-
-export interface PageCTAProps {
-  title: string;
-  description: string;
-  primaryButton: {
-    text: string;
-    href: string;
-  };
-  secondaryButton?: {
-    text: string;
-    href: string;
-  };
+export interface StatItem {
+  number: string;
+  label: string;
 }

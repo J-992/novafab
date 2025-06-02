@@ -1,15 +1,15 @@
 import React from 'react';
 import { ButtonProps } from '../../types';
-import styles from '../../styles/components/Button.module.css';
 
 const Button: React.FC<ButtonProps> = ({ 
   variant, 
+  size = 'md',
   children, 
   href, 
   onClick, 
   className = '' 
 }) => {
-  const baseClass = `${styles.button} ${styles[variant]} ${className}`;
+  const baseClass = `btn btn-${variant} ${size !== 'md' ? `btn-${size}` : ''} ${className}`;
 
   if (href) {
     return (
