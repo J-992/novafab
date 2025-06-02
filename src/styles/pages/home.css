@@ -2,7 +2,7 @@
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--blue-gradient-start) 0%, var(--blue-gradient-end) 100%);
+  background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-light) 100%);
   color: var(--white);
   position: relative;
   min-height: 80vh;
@@ -63,7 +63,7 @@
 .feature-icon {
   width: 80px;
   height: 80px;
-  background: var(--accent-blue);
+  background: var(--brand-orange);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@
 
 /* Mission Section */
 .mission-section {
-  background: var(--gray-100);
+  background: var(--brand-gray);
 }
 
 .mission-header {
@@ -99,7 +99,7 @@
 }
 
 .mission-title {
-  color: var(--navy-primary);
+  color: var(--purple-primary);
   margin-bottom: var(--space-6);
 }
 
@@ -122,7 +122,7 @@
 }
 
 .mission-visual {
-  background: var(--navy-primary);
+  background: var(--purple-primary);
   border-radius: var(--radius-lg);
   height: 400px;
   display: flex;
@@ -135,7 +135,7 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-primary) 100%);
+  background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-primary) 100%);
   color: var(--white);
   text-align: center;
 }

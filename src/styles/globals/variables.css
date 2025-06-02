@@ -1,24 +1,40 @@
 :root {
-  /* Colors - Hadrian Style */
-  --navy-primary: #1e3a8a;
-  --navy-dark: #1e293b;
-  --navy-light: #3b82f6;
-  --blue-gradient-start: #1e3a8a;
-  --blue-gradient-end: #3730a3;
+  /* Colors - New Brand Palette */
+  --brand-orange: #FF6B47;           /* Primary brand color - orange */
+  --brand-purple: #2D1B3D;          /* Dark purple */
+  --brand-gray: #E8E6E6;            /* Light gray */
+  
+  /* Extended Purple Shades */
+  --purple-primary: #2D1B3D;
+  --purple-dark: #1F1229;
+  --purple-light: #4A2F5A;
+  
+  /* Extended Orange Shades */
+  --orange-primary: #FF6B47;
+  --orange-dark: #E85A40;
+  --orange-light: #FF8B6F;
+  
+  /* Legacy Color Mappings */
+  --navy-primary: #2D1B3D;          /* Map to new purple */
+  --navy-dark: #1F1229;
+  --navy-light: #4A2F5A;
+  --blue-gradient-start: #2D1B3D;
+  --blue-gradient-end: #4A2F5A;
   
   /* Neutrals */
-  --gray-50: #f8fafc;
-  --gray-100: #f1f5f9;
-  --gray-200: #e2e8f0;
-  --gray-300: #cbd5e1;
-  --gray-600: #475569;
-  --gray-700: #334155;
-  --gray-800: #1e293b;
-  --gray-900: #0f172a;
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #E8E6E6;            /* Brand gray */
+  --gray-300: #D3D3D3;
+  --gray-600: #6B7280;
+  --gray-700: #4B5563;
+  --gray-800: #2D1B3D;            /* Brand purple for dark text */
+  --gray-900: #1F1229;
   --white: #ffffff;
   
   /* Accent Colors */
-  --accent-blue: #3b82f6;
+  --accent-orange: #FF6B47;        /* Primary accent - brand orange */
+  --accent-blue: #FF6B47;          /* Map blue accent to orange */
   --accent-cyan: #06b6d4;
   
   /* Typography */

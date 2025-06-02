@@ -53,13 +53,13 @@ p {
 }
 
 a {
-  color: var(--accent-blue);
+  color: var(--brand-orange);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--navy-primary);
+  color: var(--orange-dark);
 }
 
 img {
@@ -68,12 +68,12 @@ img {
 }
 
 *:focus {
-  outline: 2px solid var(--accent-blue);
+  outline: 2px solid var(--brand-orange);
   outline-offset: 2px;
 }
 
 ::selection {
-  background: var(--accent-blue);
+  background: var(--brand-orange);
   color: var(--white);
 }
 

@@ -21,6 +21,5 @@ export const features: FeatureItem[] = [
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Our Mission', href: '/mission' },
-  { label: 'Careers', href: '/careers' },
   { label: 'Blog', href: '/blog' }
 ];

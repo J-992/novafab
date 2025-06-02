@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { navItems } from '../../data/content';
+import NovaLogo from '../ui/NovaLogo'; // Import your SVG component
 import '../../styles/components/layout/Header.css';
 
 const Header: React.FC = () => {
@@ -19,7 +20,12 @@ const Header: React.FC = () => {
         <div className="header-container">
           {/* Logo */}
           <a href="/" className={`header-logo ${isScrolled ? 'scrolled' : ''}`}>
-            NOVA™
+            <NovaLogo 
+              className="header-logo-svg"
+              style={{
+                fill: 'var(--brand-orange)'  // Always orange for brand consistency
+              }}
+            />
           </a>
 
           {/* Navigation */}

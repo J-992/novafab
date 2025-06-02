@@ -15,25 +15,25 @@
 }
 
 .btn-primary {
-  background: var(--navy-primary);
+  background: var(--purple-primary);
   color: var(--white);
-  border: 2px solid var(--navy-primary);
+  border: 2px solid var(--purple-primary);
 }
 
 .btn-primary:hover {
-  background: var(--navy-dark);
-  border-color: var(--navy-dark);
+  background: var(--purple-dark);
+  border-color: var(--purple-dark);
   transform: translateY(-1px);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--navy-primary);
-  border: 2px solid var(--navy-primary);
+  color: var(--purple-primary);
+  border: 2px solid var(--purple-primary);
 }
 
 .btn-secondary:hover {
-  background: var(--navy-primary);
+  background: var(--purple-primary);
   color: var(--white);
   transform: translateY(-1px);
 }
@@ -84,7 +84,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: var(--radius-md);
-  background: var(--navy-primary);
+  background: var(--purple-primary);
   color: var(--white);
 }
 

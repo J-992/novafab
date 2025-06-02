@@ -1,4 +1,5 @@
 import React from 'react';
+import NovaLogo from '../ui/NovaLogo'; // Import your SVG component
 import '../../styles/components/layout/Footer.css';
 
 const Footer: React.FC = () => {
@@ -9,7 +10,12 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <div className="footer-logo">
-              NOVA™
+              <NovaLogo 
+                className="footer-logo-svg"
+                style={{
+                  fill: 'var(--brand-orange)'  // Orange for brand consistency
+                }}
+              />
             </div>
             <p className="footer-description">
               Nova is building highly automated factories that will accelerate 
