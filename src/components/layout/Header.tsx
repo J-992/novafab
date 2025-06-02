@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           {/* Navigation */}
           <div className="header-nav">
             {navItems.map((item, index) => (
-              
+              <a
                 key={index}
                 href={item.href}
                 className={`header-nav-link ${isScrolled ? 'scrolled' : ''}`}
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             ))}
             
             {/* CTA Button */}
-            
+            <a
               href="/careers"
               className={`btn btn-outline btn-sm header-cta ${isScrolled ? 'scrolled' : ''}`}
             >
