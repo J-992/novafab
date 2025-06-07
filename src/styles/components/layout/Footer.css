@@ -1,6 +1,11 @@
 .footer {
-  background: var(--brand-gray);
+  background: var(--brand-purple); /* Now dark gray */
   padding: var(--space-16) 0 var(--space-8);
+  display: flex;
+  /* width: var(--page-width);
+  left: 50%; 
+  transform: translateX(-50%);
+  position: relative; */
 }
 
 .footer-content {
@@ -13,26 +18,34 @@
 .footer-logo {
   font-size: var(--text-2xl);
   font-weight: 800;
-  color: var(--navy-primary);
+  color: var(--gray-800); /* Light text */
   margin-bottom: var(--space-4);
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .footer-logo-svg {
   height: 36px;
   width: auto;
+  fill: var(--brand-orange); /* Always orange in footer */
+  transition: transform 0.3s ease;
+}
+
+/* Footer logo hover effect - only scale, no color change */
+.footer-logo:hover .footer-logo-svg {
+  transform: scale(1.05);
 }
 
 .footer-description {
-  color: var(--gray-600);
+  color: var(--gray-600); /* Lighter text for dark theme */
   line-height: 1.6;
   margin-bottom: var(--space-4);
 }
 
-.footer-section h4 {
-  color: var(--gray-800);
+.footer h4 {
+  color: var(--gray-800); /* Light text */
   margin-bottom: var(--space-4);
   font-size: var(--text-lg);
 }
@@ -45,11 +58,11 @@
 }
 
 .footer-email:hover {
-  color: var(--orange-dark);
+  color: var(--orange-light);
 }
 
 .footer-address {
-  color: var(--gray-600);
+  color: var(--gray-600); /* Lighter text */
 }
 
 .footer-nav {
@@ -65,14 +78,14 @@
 }
 
 .footer-nav-link:hover {
-  color: var(--orange-dark);
+  color: var(--orange-light);
 }
 
 .footer-copyright {
   border-top: 1px solid var(--gray-300);
   padding-top: var(--space-6);
   text-align: center;
-  color: var(--gray-600);
+  color: var(--gray-600); /* Lighter text */
   font-size: var(--text-sm);
 }
 
@@ -84,5 +97,14 @@
   
   .footer-logo-svg {
     height: 32px;
+  }
+  .footer{
+    width: var(--page-width-sm);
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    width: var(--page-width-md);
   }
 }

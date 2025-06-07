@@ -8,10 +8,13 @@
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   border-bottom: none;
+  /* width: var(--page-width);
+  left: 50%;
+  transform: translateX(-50%); */
 }
 
 .header.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--purple-primary);
   border-bottom: 1px solid var(--gray-200);
 }
 
@@ -25,7 +28,7 @@
 .header-logo {
   font-size: var(--text-2xl);
   font-weight: 800;
-  color: var(--white);
+  color: var(--true-white);
   text-decoration: none;
   letter-spacing: 0.05em;
   transition: color 0.3s ease;
@@ -36,11 +39,28 @@
 .header-logo-svg {
   height: 32px;
   width: auto;
-  transition: fill 0.3s ease;
+  fill: var(--true-white); /* Default white in navbar */
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+/* Logo hover effect - changes to orange when hovered in navbar */
+.header-logo:hover .header-logo-svg {
+  fill: var(--brand-orange);
+  transform: scale(1.05);
+}
+
+/* When scrolled, logo should be darker */
+.header-logo.scrolled .header-logo-svg {
+  fill: var(--gray-700);
+}
+
+/* When scrolled AND hovered, logo should be orange */
+.header-logo.scrolled:hover .header-logo-svg {
+  fill: var(--brand-orange);
 }
 
 .header-logo.scrolled {
-  color: var(--navy-primary);
+  color: var(--gray-800);
 }
 
 .header-nav {
@@ -50,7 +70,7 @@
 }
 
 .header-nav-link {
-  color: var(--white);
+  color: var(--true-white);
   text-decoration: none;
   font-weight: 500;
   font-size: var(--text-sm);
@@ -68,13 +88,19 @@
 }
 
 .header-cta {
-  border-color: var(--white);
-  color: var(--white);
+  border-color: var(--true-white);
+  color: var(--true-white);
 }
 
 .header-cta.scrolled {
   border-color: var(--purple-primary);
   color: var(--purple-primary);
+}
+
+.header-cta:hover {
+  background: var(--brand-orange);
+  border-color: var(--brand-orange);
+  color: var(--true-white);
 }
 
 @media (max-width: 768px) {
@@ -84,5 +110,15 @@
   
   .header-logo-svg {
     height: 28px;
+  }
+
+  .header{
+    width: var(--page-width-sm);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header{
+    width: var(--page-width-md);
   }
 }

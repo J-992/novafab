@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { navItems } from '../../data/content';
-import NovaLogo from '../ui/NovaLogo'; // Import your SVG component
+import NovaLogo from '../ui/NovaLogo';
 import '../../styles/components/layout/Header.css';
 
 const Header: React.FC = () => {
@@ -22,9 +22,7 @@ const Header: React.FC = () => {
           <a href="/" className={`header-logo ${isScrolled ? 'scrolled' : ''}`}>
             <NovaLogo 
               className="header-logo-svg"
-              style={{
-                fill: 'var(--brand-orange)'  // Always orange for brand consistency
-              }}
+              // Remove hardcoded fill - now handled by CSS
             />
           </a>
 

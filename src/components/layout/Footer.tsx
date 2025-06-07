@@ -1,5 +1,5 @@
 import React from 'react';
-import NovaLogo from '../ui/NovaLogo'; // Import your SVG component
+import NovaLogo from '../ui/NovaLogo';
 import '../../styles/components/layout/Footer.css';
 
 const Footer: React.FC = () => {
@@ -12,9 +12,7 @@ const Footer: React.FC = () => {
             <div className="footer-logo">
               <NovaLogo 
                 className="footer-logo-svg"
-                style={{
-                  fill: 'var(--brand-orange)'  // Orange for brand consistency
-                }}
+                // Remove hardcoded fill - now handled by CSS
               />
             </div>
             <p className="footer-description">
