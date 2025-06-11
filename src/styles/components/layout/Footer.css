@@ -2,6 +2,7 @@
   background: var(--brand-purple); /* Now dark gray */
   padding: var(--space-16) 0 var(--space-8);
   display: flex;
+  background: linear-gradient(180deg, var(--brand-purple) 0%, var(--brand-black) 100%);
   /* width: var(--page-width);
   left: 50%; 
   transform: translateX(-50%);

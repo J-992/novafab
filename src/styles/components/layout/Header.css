@@ -5,7 +5,7 @@
   right: 0;
   z-index: 1000;
   background: transparent;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   transition: all 0.3s ease;
   border-bottom: none;
   /* width: var(--page-width);

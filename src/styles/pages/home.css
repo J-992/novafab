@@ -7,24 +7,44 @@
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-light) 100%);
+  background: linear-gradient(0deg, var(--purple-primary) 0%, var(--purple-dark) 100%);
   color: var(--true-white);
   position: relative;
   min-height: 80vh;
   display: flex;
   align-items: center;
   position: relative;
+  /* background-image: url(../../assets/images/rocket.png);
+  background-repeat: no-repeat;
+  background-color: transparent; */
 }
 
+.hero-bg {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/images/rocket.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Reduced opacity for a subtle effect */
+  filter: blur(3px); /* Blur effect for the background */
+  z-index: 1; /* Behind the content */
+}
 .hero-content {
   text-align: center;
   z-index: 2;
 }
 
 .hero-badge {
-  background: rgba(255, 107, 71, 0.2); /* Orange with transparency */
+  background: rgba(144, 89, 75, 0); /* Orange with transparency */
   color: var(--true-white);
   margin-bottom: var(--space-6);
+  width: 50%;
+  max-width: 300px;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -52,7 +72,8 @@
 
 /* Features Section */
 .features-section {
-  background: var(--gray-100); /* Dark background */
+  background: linear-gradient(0deg, var(--purple-dark) 0%, var(--purple-primary) 100%);
+  color: var(--true-white);
 }
 
 .features-grid {
@@ -81,7 +102,7 @@
   width: 80px;
   height: 80px;
   background: var(--brand-orange);
-  border-radius: 50%;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +130,8 @@
 
 /* Mission Section */
 .mission-section {
-  background: var(--brand-black); /* Dark gray background */
+  background: linear-gradient(180deg, var(--purple-dark) 0%, var(--brand-black) 100%);
+  color: var(--true-white);
 }
 
 .mission-header {
@@ -166,7 +188,7 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-primary) 100%);
+  background: linear-gradient(180deg, var(--brand-black) 0%, var(--brand-purple) 100%);
   color: var(--true-white);
   text-align: center;
 }
@@ -194,9 +216,6 @@
     grid-template-columns: 1fr;
     gap: var(--space-8);
   }
-  .homepage{
-    width: var(--page-width-md);
-  }
 }
 
 @media (max-width: 768px) {
@@ -211,8 +230,5 @@
   .hero-buttons {
     flex-direction: column;
     align-items: center;
-  }
-  .homepage{
-    width: var(--page-width-sm);
   }
 }

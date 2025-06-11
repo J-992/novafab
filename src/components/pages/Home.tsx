@@ -9,11 +9,13 @@ const Home: React.FC = () => {
       <div className="homepage">
         {/* Hero Section */}
         <section className="hero wireframe-bg">
+          <div className="hero-bg"/>
+        
           <div className="container">
             <div className="hero-content">
               <div className="badge hero-badge">
-                HOW WE'RE DOING IT
-              </div>
+                Manufacturing the Future
+              </div>  
 
               <h1>
                 Canada's most efficient factory.
@@ -38,7 +40,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Features Section */}
-        <section className="features-section section-padding">
+        <section className="features-section section-padding wireframe-bg">
           <div className="container">
             <div className="features-grid">
               {features.map((feature, index) => (
@@ -55,7 +57,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Mission Section */}
-        <section className="mission-section section-padding">
+        <section className="mission-section section-padding wireframe-bg">
           <div className="container">
             <div className="mission-header">
               <div className="badge mission-badge">

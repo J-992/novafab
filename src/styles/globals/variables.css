@@ -1,7 +1,7 @@
 :root {
   /* Core Brand Palette - Scarlet to Red to Orange to Purple to Black */
   --brand-orange: #FF6B47;           /* Primary brand color - orange */
-  --brand-purple: #2D1B3D;          /* Secondary brand color - dark purple */
+  --brand-purple: #1C0D31;          /* Secondary brand color - dark purple */
   --brand-scarlet: #DC143C;         /* Scarlet accent - for critical alerts/CTAs */
   --brand-red: #B91C1C;             /* Deep red - use sparingly for emphasis */
   --brand-black: #0A0A0A;           /* Near black */
@@ -13,10 +13,10 @@
   --orange-scarlet: #FF4500;        /* Orange-red blend */
   
   /* Purple Gradient (Secondary) */
-  --purple-primary: #2D1B3D;        /* Main purple */
-  --purple-dark: #1F1229;           /* Darker purple */
-  --purple-light: #4A2F5A;          /* Lighter purple */
-  --purple-black: #161016;          /* Purple-black blend */
+  --purple-primary: rgb(78, 36, 115);        /* Main purple */
+  --purple-dark: #1C0D31;           /* Darker purple */
+  --purple-light: #5d2aa4;          /* Lighter purple */
+  --purple-black: #150729;          /* Purple-black blend */
   
   /* Red Gradient (Sparingly Used) */
   --red-primary: #B91C1C;           /* Deep red */
