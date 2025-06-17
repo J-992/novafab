@@ -23,6 +23,9 @@ const Blog: React.FC = () => {
               fittings, we share the stories, challenges, and breakthroughs that define 
               advanced manufacturing.
             </p>
+            <p>              
+              [COMING SOON: In-depth articles, case studies, and industry insights on specialized manufacturing.]
+              </p>
 
             <div className="blog-hero-buttons">
               <Button variant="outline" size="lg" href="mailto:jobs@nova.co">
@@ -36,8 +39,7 @@ const Blog: React.FC = () => {
         </div>
       </section>
 
-      {/* CMS Placeholder Section */}
-      <section className="cms-placeholder-section section-padding">
+      {/* <section className="cms-placeholder-section section-padding">
         <div className="container">
           <div className="cms-placeholder">
             <div className="cms-placeholder-content">
@@ -107,10 +109,9 @@ const Blog: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Preview Content Section */}
-      <section className="preview-content-section section-padding">
+      {/* <section className="preview-content-section section-padding">
         <div className="container">
           <div className="preview-header">
             <div className="badge">COMING SOON</div>
@@ -168,10 +169,10 @@ const Blog: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Newsletter Section */}
-      <section className="newsletter-section section-padding wireframe-bg">
+   
+      {/* <section className="newsletter-section section-padding wireframe-bg">
         <div className="container">
           <div className="newsletter-content">
             <div className="badge">STAY UPDATED</div>
@@ -190,8 +191,10 @@ const Blog: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
+
+    
   );
 };
 

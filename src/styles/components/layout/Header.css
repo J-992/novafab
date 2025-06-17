@@ -14,7 +14,7 @@
 }
 
 .header.scrolled {
-  background: var(--purple-primary);
+  background: var(--purple-dark) 100%;
   border-bottom: 1px solid var(--gray-200);
 }
 
@@ -92,10 +92,6 @@
   color: var(--true-white);
 }
 
-.header-cta.scrolled {
-  border-color: var(--purple-primary);
-  color: var(--purple-primary);
-}
 
 .header-cta:hover {
   background: var(--brand-orange);
@@ -117,8 +113,3 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .header{
-    width: var(--page-width-md);
-  }
-}

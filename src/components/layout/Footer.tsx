@@ -19,6 +19,7 @@ const Footer: React.FC = () => {
               Nova is building highly automated factories that will accelerate 
               the entire advanced manufacturing sector and bring the future 
               forward, faster.
+              Website construction still in progress.
             </p>
           </div>
 
@@ -26,7 +27,7 @@ const Footer: React.FC = () => {
           <div>
             <h4>Talk to us</h4>
             <a href="mailto:jobs@nova.co" className="footer-email">
-              jobs@nova.co
+              
             </a>
             <div className="footer-address">
               <div>Canada</div>

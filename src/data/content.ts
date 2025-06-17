@@ -2,7 +2,7 @@ import { FeatureItem } from '../types';
 
 export const features: FeatureItem[] = [
   {
-    icon: 'insert',
+    icon: 'm',
     title: 'Components in days, not months',
     description: 'We deliver precision-grade machined parts in 5-21 days, depending on complexity and coatings/outside processes.'
   },

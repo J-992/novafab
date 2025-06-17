@@ -8,10 +8,27 @@
 .mission-hero {
   background: linear-gradient(0deg, var(--purple-primary) 0%, var(--purple-dark) 100%);
   color: var(--true-white);
-  min-height: 70vh;
+  position: relative;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.mission-hero::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-image: url(../../assets/images/iss.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Reduced opacity for a subtle effect */
+  filter: blur(4px); /* Blur effect for the background */
+  z-index: 1; /* Behind the content */
 }
 
 .mission-hero-content {
@@ -19,10 +36,14 @@
   z-index: 2;
 }
 
+
 .mission-hero-badge {
-  background: rgba(255, 107, 71, 0.2);
+  background: rgba(144, 89, 75, 0); /* Orange with transparency */
   color: var(--true-white);
   margin-bottom: var(--space-6);
+  width: 50%;
+  max-width: 300px;
+  justify-content: center;
 }
 
 .mission-hero h1 {
@@ -52,6 +73,14 @@
 .problem-section {
     background: linear-gradient(0deg, var(--purple-dark) 0%, var(--purple-primary) 100%);
 
+}
+
+.problem-badge{
+  display: flex;
+  background: rgba(144, 89, 75, 0); /* Orange with transparency */
+  color: var(--true-white);
+  width: 50%;
+  justify-content: center;
 }
 
 .problem-content {
@@ -126,7 +155,12 @@
 }
 
 .solution-badge {
+  background: rgba(144, 89, 75, 0); /* Orange with transparency */
+  color: var(--true-white);
   margin-bottom: var(--space-6);
+  width: 50%;
+  max-width: 300px;
+  justify-content: center;
 }
 
 .solution-header h2 {
@@ -282,9 +316,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .mission-page {
-    width: var(--page-width-md);
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -306,7 +338,5 @@
     gap: var(--space-4);
   }
   
-  .mission-page {
-    width: var(--page-width-sm);
-  }
+
 }

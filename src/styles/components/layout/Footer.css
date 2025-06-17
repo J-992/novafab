@@ -99,13 +99,5 @@
   .footer-logo-svg {
     height: 32px;
   }
-  .footer{
-    width: var(--page-width-sm);
-  }
-}
-
-@media (max-width: 1024px) {
-  .footer {
-    width: var(--page-width-md);
-  }
+ 
 }
